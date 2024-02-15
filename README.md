@@ -43,6 +43,29 @@ The key components of a GMM include the number of components or Gaussians, the e
 
 Below is a basic code implementation for a Gaussian Mixture Model.
 
+```sh
+from sklearn.mixture import GaussianMixture
+import matplotlib.pyplot as plt
+import numpy as np
+
+# Sample data
+X = np.random.rand(100, 2)
+
+# GMM model
+gmm = GaussianMixture(n_components=3)
+gmm.fit(X)
+y_gmm = gmm.predict(X)
+
+# Plotting
+plt.scatter(X[:, 0], X[:, 1], c=y_gmm, cmap='viridis')
+centers = gmm.means_
+plt.scatter(centers[:, 0], centers[:, 1], c='black', s=200, alpha=0.5)
+plt.title('Gaussian Mixture Model')
+plt.show()
+  ```
+
+![Gaussian Mixture Model](GMM.png)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
