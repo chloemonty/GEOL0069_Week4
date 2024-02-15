@@ -18,6 +18,11 @@ The following software needs to be installed to run the code.
   ```sh
   !pip install cartopy
   ```
+* Mounting Google Drive on Google Colab
+  ```sh
+  from google.colab import drive
+  drive.mount('/content/drive')
+  ```
 
   <!-- CONTEXT -->
 ## Context
@@ -39,7 +44,7 @@ The difference in physical properties between different materials or substances 
 
 The unsupervised learning method used in this project is Gaussian Mixture Models or GMMs. These are probabilistic models that are used to represent normally distributed subpopulations of an overall population (GEOL0069 – Week 4 Jupyter Book). They assume that the data used has been generated from a mixture of different Gaussian distribution that have their own means and variances (and therefore standard deviations). GMMs allow us to represent complex distributions through the combination of simpler distributions, making them useful for clustering and density estimations.
 
-The key components of a GMM include the number of components or Gaussians, the expectation-maximization algorithm, which is an iterative process that calculates the probability that a certain data point belongs to a certain cluster and updates the parameters to maximize the likelihood of the data accordingly, and covariance type (GEOL0069 – Week 4 Jupyter Book; Wikipedia – Expectation-maximization algorithm).
+The key components of a GMM include the number of components or Gaussians, the expectation-maximization algorithm, which is an iterative process that calculates the probability that a certain data point belongs to a certain cluster and updates the parameters to maximize the likelihood of the data accordingly, and covariance type (GEOL0069 – Week 4 Jupyter Book).
 
 Below is a basic code implementation for a Gaussian Mixture Model.
 
@@ -67,5 +72,6 @@ plt.show()
 ![Gaussian Mixture Model](GMM.png)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 
 
