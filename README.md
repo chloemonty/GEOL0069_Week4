@@ -76,11 +76,12 @@ plt.show()
 
   <!-- FUNCTIONS -->
 
-## Reading in the Necessary Functions
+## Reading in the Necessary Functions & Running the GMM Model
 
 In order to ensure that data is compatible with the chosen analytical model, the data needs to be preprocessed. This includes transforming raw data into variables such as peakiness and stack standard deviation, as well as removing NaN values (GEOL0069 – Week 4 Jupyter Book).
 
+The Gaussian model can be run using GaussianMixture, imported from sklearn.mixture, and defining the number of components (or clusters) and the random state, which is a parameter that ensures the reproducibility of the results.
+
+_For more information on the parameter options for GaussianMixture, please refer to the [sklearn Guide](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html)_
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
