@@ -90,7 +90,14 @@ _For more information on the parameter options for GaussianMixture, please refer
 
 The resulting clusters of functions can then be extracted and plotted using plt from matplotlib.pyplot. The echos (or functions) in the sea ice cluster are been labelled '0' and the lead echos are labelled '1' (i.e. waves_cleaned[clusters_gmm == 1] are lead echos).
 
-The means of the sea ice and lead echos are calculated and plotted using the code below:
+As shown in the figure below from Zhong et al. (2023), the waveform of leads in the sea ice resemble spike pulses, the waveform of open water rises quickly and then fluctuates while gradually decreasing and the waveform of sea ice is a mixture of the two with a spike followed by a more gradual decrease. The plots showing the first 5 functions where clusters_gmm are equal to 0 for sea ice and 1 for leads (also shown below).
+
+![Zhong et al. 2013](Zhong2013.png)
+_Link to the paper by [Zhong et al. 2013](https://www.mdpi.com/2072-4292/15/2/516)_
+
+![5 functions](5functions.png)
+
+The means of the sea ice and lead echos are calculated and plotted using the code below. It shows that the power of the echos for sea ice is lower than for leads and ...???
 
 ```sh
 plt.plot(np.mean(waves_cleaned[clusters_gmm==0],axis=0),label='sea ice')
@@ -101,15 +108,6 @@ plt.legend()
   ```
 
 ![Mean](mean.png)
-
-
-As shown in the figure below from Zhong et al. (2023), the waveform of leads in the sea ice resemble spike pulses, the waveform of open water rises quickly and then fluctuates while gradually decreasing and the waveform of sea ice is a mixture of the two with a spike followed by a more gradual decrease. The plots showing the first 5 functions where clusters_gmm are equal to 0 for sea ice and 1 for leads (also shown below). The plot of the means for sea ice and leads show that the power of the echos for sea ice is lower than for leads and ...???
-
-![Zhong et al. 2013](Zhong2013.png)
-_Link to the paper by [Zhong et al. 2013](https://www.mdpi.com/2072-4292/15/2/516)_
-
-![5 functions](5functions.png)
-
 
 The standard deviations of the sea ice and lead echos are calculated and plotted using the code below:
 
@@ -124,7 +122,6 @@ plt.legend()
 ![STD](std.png)
 
 The plot of the standard deviation for sea ice and leads show that there is much more variability in the shape of the lead echos than sea ice.
-
 
 The number of echos in each cluster can also be inspected using the code below:
 
