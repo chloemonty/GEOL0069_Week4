@@ -78,3 +78,9 @@ plt.show()
 
 ## Reading in the Necessary Functions
 
+In order to ensure that data is compatible with the chosen analytical model, the data needs to be preprocessed. This includes transforming raw data into variables such as peakiness and stack standard deviation, as well as removing NaN values (GEOL0069 – Week 4 Jupyter Book).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
