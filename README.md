@@ -95,6 +95,8 @@ The means of the sea ice and lead echos are calculated and plotted using the cod
 ```sh
 plt.plot(np.mean(waves_cleaned[clusters_gmm==0],axis=0),label='sea ice')
 plt.plot(np.mean(waves_cleaned[clusters_gmm==1],axis=0),label='lead')
+
+plt.title('Plot of the means for the sea ice and lead echos')
 plt.legend()
   ```
 
@@ -105,6 +107,8 @@ And the standard deviations of the sea ice and lead echos are calculated and plo
 ```sh
 plt.plot(np.std(waves_cleaned[clusters_gmm==0],axis=0),label='sea ice')
 plt.plot(np.std(waves_cleaned[clusters_gmm==1],axis=0),label='lead')
+
+plt.title('Plot of the standard deviation for the sea ice and lead echos')
 plt.legend()
   ```
 
