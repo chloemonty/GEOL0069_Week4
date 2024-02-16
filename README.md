@@ -84,6 +84,15 @@ The Gaussian model can be initialised using GaussianMixture, imported from sklea
 
 _For more information on the parameter options for GaussianMixture, please refer to the [sklearn Guide](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html)_
 
-The resulting functions can then be extracted and plotted using 
+The resulting clusters of functions can then be extracted and plotted using plt from matplotlib.pyplot. The functions in the sea ice cluster are been labelled '0' and the lead functions have been labelled '1' (i.e. waves_cleaned[clusters_gmm == 1] are lead functions).
+
+The mean sea ice and lead functions are plotted using
+
+```sh
+plt.plot(np.mean(waves_cleaned[clusters_gmm==0],axis=0),label='sea ice')
+plt.plot(np.mean(waves_cleaned[clusters_gmm==1],axis=0),label='lead')
+plt.legend()
+  ```
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
