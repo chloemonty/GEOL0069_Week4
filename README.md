@@ -108,7 +108,7 @@ As shown in the figure below from Zhong et al. (2023), the waveform of leads in 
 
 ![5 functions](5functions.png)
 
-Link to the paper by [Zhong et al. 2013](https://www.mdpi.com/2072-4292/15/2/516)
+_Link to the paper by [Zhong et al. 2013](https://www.mdpi.com/2072-4292/15/2/516)_
 
 The standard deviations of the sea ice and lead echos are calculated and plotted using the code below:
 
