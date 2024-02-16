@@ -110,4 +110,16 @@ plt.legend()
 
 ![STD](std.png)
 
+The number of echos in each cluster can also be inspected using the code below:
+
+```sh
+unique, counts = np.unique(clusters_gmm, return_counts=True)
+class_counts = dict(zip(unique, counts))
+
+print(class_counts)
+  ```
+
+Output:
+{0: 5013, 1: 1836}
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
