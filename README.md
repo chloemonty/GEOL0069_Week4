@@ -84,6 +84,10 @@ The Gaussian model can be initialised using GaussianMixture, imported from sklea
 
 _For more information on the parameter options for GaussianMixture, please refer to the [sklearn Guide](https://scikit-learn.org/stable/modules/generated/sklearn.mixture.GaussianMixture.html)_
 
+  <!-- RESULTS -->
+
+## Results
+
 The resulting clusters of functions can then be extracted and plotted using plt from matplotlib.pyplot. The echos (or functions) in the sea ice cluster are been labelled '0' and the lead echos are labelled '1' (i.e. waves_cleaned[clusters_gmm == 1] are lead echos).
 
 The means of the sea ice and lead echos are calculated and plotted using the code below:
