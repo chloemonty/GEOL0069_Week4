@@ -102,7 +102,15 @@ plt.legend()
 
 ![Mean](mean.png)
 
-And the standard deviations of the sea ice and lead echos are calculated and plotted using the code below:
+As shown in the figure below from Zhong et al. (2023), the waveform of leads in the sea ice resemble spike pulses, the waveform of open water rises quickly and then fluctuates while gradually decreasing and the waveform of sea ice is a mixture of the two with a spike followed by a more gradual decrease. The plots showing the first 5 functions where clusters_gmm are equal to 0 for sea ice and 1 for leads (also shown below). The plot of the means for sea ice and leads show that the power of the echos for sea ice is lower than for leads and ...???
+
+![Zhong et al. 2013](Zhong2013.png)
+
+![5 functions](5functions.png)
+
+Link to the paper by [Zhong et al. 2013](https://www.mdpi.com/2072-4292/15/2/516)
+
+The standard deviations of the sea ice and lead echos are calculated and plotted using the code below:
 
 ```sh
 plt.plot(np.std(waves_cleaned[clusters_gmm==0],axis=0),label='sea ice')
@@ -113,6 +121,8 @@ plt.legend()
   ```
 
 ![STD](std.png)
+
+The plot of the standard deviation for sea ice and leads show that there is much more variability in the shape of the lead echos than sea ice.
 
 The number of echos in each cluster can also be inspected using the code below:
 
@@ -127,3 +137,5 @@ Output:
 {0: 5013, 1: 1836}
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
