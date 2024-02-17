@@ -97,7 +97,7 @@ _Link to the paper by [Zhong et al. 2013](https://www.mdpi.com/2072-4292/15/2/51
 
 ![5 functions](5functions.png)
 
-The means of the sea ice and lead echos are calculated and plotted using the code below. It shows that the power of the echos for sea ice is lower than for leads, which could potentially be attributed to the difference in roughness between sea ice and water, as smoother surfaces are more reflective, and/or the difference in the dielectric properties between sea ice and water ([Jiang & Wu, 2004](https://doi.org/10.1002/asl.77). 
+The means of the sea ice and lead echos are calculated and plotted using the code below. It shows that the power of the echos for sea ice is lower than for leads, which could potentially be attributed to the difference in roughness between sea ice and water, as smoother surfaces are more reflective, and/or the difference in the dielectric properties between sea ice and water ([Jiang & Wu, 2004](https://doi.org/10.1002/asl.77). The mean for leads is also noisier than for sea ice.
 
 ```sh
 plt.plot(np.mean(waves_cleaned[clusters_gmm==0],axis=0),label='sea ice')
@@ -109,7 +109,8 @@ plt.legend()
 
 ![Mean](mean.png)
 
-The standard deviations of the sea ice and lead echos are calculated and plotted using the code below:
+The standard deviations of the sea ice and lead echos are calculated and plotted using the code below. It shows that there is much more variability in the shape of the lead echos than sea ice–the signal is noisier for leads than sea ice. This could be caused by differences in size and shape between the leads, leading to differences in the power of the echos as well as the shape of the echos, as well as changes in the state of the leads as they freeze/refreeze and melt ([Britannica – Sea Ice](https://www.britannica.com/science/sea-ice)).
+
 
 ```sh
 plt.plot(np.std(waves_cleaned[clusters_gmm==0],axis=0),label='sea ice')
@@ -120,8 +121,6 @@ plt.legend()
   ```
 
 ![STD](std.png)
-
-The plot of the standard deviation for sea ice and leads show that there is much more variability in the shape of the lead echos than sea ice.
 
 The number of echos in each cluster can also be inspected using the code below:
 
