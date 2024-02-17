@@ -3,7 +3,7 @@
 <!-- GETTING STARTED -->
 ## Getting Started
 
-The task for the week 4 assignment in GEOL0069 Artificial Intelligence for Earth Observation is to use unsupervised learning methods for altimetry classification and in particular, distinguishing between sea ice and leads in Sentinel-3 altimetry datasets. The week4_assignment.ipynb notebook builds on the notebook called Chapter1_Unsupervised_Learning_Methods_Michel.ipynb.
+The task for the week 4 assignment in GEOL0069 Artificial Intelligence for Earth Observation is to use unsupervised learning methods for altimetry classification and in particular, distinguishing between sea ice and leads in Sentinel-3 altimetry datasets. The week4_assignment.ipynb notebook linked to this Github builds on the notebook called Chapter1_Unsupervised_Learning_Methods_Michel.ipynb.
 
 ### Prerequisites
 
