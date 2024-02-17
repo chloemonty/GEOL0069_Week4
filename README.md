@@ -97,7 +97,7 @@ _Link to the paper by [Zhong et al. 2013](https://www.mdpi.com/2072-4292/15/2/51
 
 ![5 functions](5functions.png)
 
-The means of the sea ice and lead echos are calculated and plotted using the code below. It shows that the power of the echos for sea ice is lower than for leads, which could potentially be attributed to the difference in roughness between sea ice and water, as smoother surfaces are more reflective, and/or the difference in the dielectric properties between sea ice and water ([Jiang & Wu, 2004](https://doi.org/10.1002/asl.77). The mean for leads is also noisier than for sea ice.
+The means of the sea ice and lead echos are calculated and plotted using the code below. It shows that the power of the echos for sea ice is lower than for leads, which could potentially be attributed to the difference in roughness between sea ice and water, as smoother surfaces are more reflective, and/or the difference in the dielectric properties between sea ice and water ([Jiang & Wu, 2004](https://doi.org/10.1002/asl.77)). The mean for leads is also noisier than for sea ice.
 
 ```sh
 plt.plot(np.mean(waves_cleaned[clusters_gmm==0],axis=0),label='sea ice')
