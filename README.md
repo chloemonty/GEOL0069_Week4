@@ -134,6 +134,10 @@ print(class_counts)
 Output:
 {0: 5013, 1: 1836}
 
+Below is a confusion matrix comparing the ESA official classification (flags) against my GMM cluster classification:
+
+![conf_mat](conf_mat.png)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
