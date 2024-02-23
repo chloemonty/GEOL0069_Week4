@@ -109,7 +109,7 @@ plt.legend()
 
 ![Mean](mean.png)
 
-The standard deviations of the sea ice and lead echos are calculated and plotted using the code below. It shows that there is much more variability in the shape of the lead echos than sea ice–the signal is noisier for leads than sea ice. This could be caused by differences in size and shape between the leads, leading to differences in the power of the echos as well as the shape of the echos, as well as changes in the state of the leads as they freeze/refreeze and melt ([Britannica – Sea Ice](https://www.britannica.com/science/sea-ice)).
+The standard deviations of the sea ice and lead echos are calculated and plotted using the code below. It shows that there is much more variability in the shape of the lead echos than sea ice–the signal is noisier for leads than sea ice. This could be caused by differences in size and shape between the leads, leading to differences in the power and shape of the echos, as well as changes in the state of the leads as they freeze/refreeze and melt ([Britannica – Sea Ice](https://www.britannica.com/science/sea-ice)).
 
 
 ```sh
