@@ -122,6 +122,11 @@ plt.legend()
 
 ![STD](std.png)
 
+The noise on the mean and standard deviations for the sea ice and lead echos is due to the shift in echos as they are plotted across the x-axis. The mean and standard deviation for the aligned echos are plotted below: 
+
+![aligned_mean](alignedmean.png)
+![aligned_std](alignedstd.png)
+
 The number of echos in each cluster can also be inspected using the code below:
 
 ```sh
